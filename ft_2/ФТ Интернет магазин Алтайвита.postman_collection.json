@@ -1,0 +1,1102 @@
+{
+	"info": {
+		"_postman_id": "ed68ff0f-b5ef-4c97-97aa-6061752d4cae",
+		"name": "ФТ Интернет магазин Алтайвита",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33027761"
+	},
+	"item": [
+		{
+			"name": "Просмотр_корзины",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0"
+					},
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br, zstd"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/search/?query=^%^D0^%^B1^%^D0^%^B0^%^D0^%^BB^%^D1^%^8C^%^D0^%^B7^%^D0^%^B0^%^D0^%^BC"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727201713.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Priority",
+						"value": "u=0, i"
+					}
+				],
+				"url": {
+					"raw": "{{BaseUrl}}cart/",
+					"host": [
+						"{{BaseUrl}}cart"
+					],
+					"path": [
+						""
+					]
+				},
+				"description": "Generated from cURL: curl \"https://altaivita.ru/cart/\" --compressed -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\" -H \"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8\" -H \"Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3\" -H \"Accept-Encoding: gzip, deflate, br, zstd\" -H \"Connection: keep-alive\" -H \"Referer: https://altaivita.ru/search/?query=^%^D0^%^B1^%^D0^%^B0^%^D0^%^BB^%^D1^%^8C^%^D0^%^B7^%^D0^%^B0^%^D0^%^BC\" -H \"Cookie: PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727201713.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w\" -H \"Upgrade-Insecure-Requests: 1\" -H \"Sec-Fetch-Dest: document\" -H \"Sec-Fetch-Mode: navigate\" -H \"Sec-Fetch-Site: same-origin\" -H \"Sec-Fetch-User: ?1\" -H \"Priority: u=0, i\""
+			},
+			"response": []
+		},
+		{
+			"name": "Поиск_бальзам",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0"
+					},
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br, zstd"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727201982.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Priority",
+						"value": "u=0, i"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}search/?query=бальзам",
+					"host": [
+						"{{BaseUrl}}search"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "бальзам"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl \"https://altaivita.ru/search/?query=^%^D0^%^B1^%^D0^%^B0^%^D0^%^BB^%^D1^%^8C^%^D0^%^B7^%^D0^%^B0^%^D0^%^BC\" --compressed -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\" -H \"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8\" -H \"Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3\" -H \"Accept-Encoding: gzip, deflate, br, zstd\" -H \"Connection: keep-alive\" -H \"Referer: https://altaivita.ru/\" -H \"Cookie: PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727201982.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w\" -H \"Upgrade-Insecure-Requests: 1\" -H \"Sec-Fetch-Dest: document\" -H \"Sec-Fetch-Mode: navigate\" -H \"Sec-Fetch-Site: same-origin\" -H \"Sec-Fetch-User: ?1\" -H \"Priority: u=0, i\""
+			},
+			"response": []
+		},
+		{
+			"name": "Добавить_id=3535_в_корзину",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br, zstd"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Origin",
+						"value": "https://altaivita.ru"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/search/?query=^%^D0^%^B1^%^D0^%^B0^%^D0^%^BB^%^D1^%^8C^%^D0^%^B7^%^D0^%^B0^%^D0^%^BC"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727202020.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Priority",
+						"value": "u=0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "product_id=3535&this_listId=search_list&LANG_key=ru&S_wh=1&S_CID=4931f34cef0c6348f91d73edeb908fac&S_cur_code=rub&S_koef=1&quantity=1&S_hint_code=&S_customerID=",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}engine/cart/add_products_to_cart_from_preview.php",
+					"host": [
+						"{{BaseUrl}}engine"
+					],
+					"path": [
+						"cart",
+						"add_products_to_cart_from_preview.php"
+					]
+				},
+				"description": "Generated from cURL: curl \"https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php\" --compressed -X POST -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\" -H \"Accept: */*\" -H \"Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3\" -H \"Accept-Encoding: gzip, deflate, br, zstd\" -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" -H \"X-Requested-With: XMLHttpRequest\" -H \"Origin: https://altaivita.ru\" -H \"Connection: keep-alive\" -H \"Referer: https://altaivita.ru/search/?query=^%^D0^%^B1^%^D0^%^B0^%^D0^%^BB^%^D1^%^8C^%^D0^%^B7^%^D0^%^B0^%^D0^%^BC\" -H \"Cookie: PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727202020.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w\" -H \"Sec-Fetch-Dest: empty\" -H \"Sec-Fetch-Mode: cors\" -H \"Sec-Fetch-Site: same-origin\" -H \"Priority: u=0\" --data-raw \"product_id=6398&this_listId=search_list&LANG_key=ru&S_wh=1&S_CID=4931f34cef0c6348f91d73edeb908fac&S_cur_code=rub&S_koef=1&quantity=1&S_hint_code=&S_customerID=\""
+			},
+			"response": []
+		},
+		{
+			"name": "action_with_basket_on_cart_plus1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br, zstd"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Origin",
+						"value": "https://altaivita.ru"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/cart/"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727209904.3.1.1727210099.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Priority",
+						"value": "u=0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "itemID=596178&quantity=2&action=update_quantity&LANG_key=ru&S_wh=1&S_CID=4931f34cef0c6348f91d73edeb908fac&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID=",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}engine/cart/action_with_basket_on_cart_page.php",
+					"host": [
+						"{{BaseUrl}}engine"
+					],
+					"path": [
+						"cart",
+						"action_with_basket_on_cart_page.php"
+					]
+				},
+				"description": "Generated from cURL: curl \"https://altaivita.ru/engine/cart/action_with_basket_on_cart_page.php\" --compressed -X POST -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\" -H \"Accept: */*\" -H \"Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3\" -H \"Accept-Encoding: gzip, deflate, br, zstd\" -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" -H \"X-Requested-With: XMLHttpRequest\" -H \"Origin: https://altaivita.ru\" -H \"Connection: keep-alive\" -H \"Referer: https://altaivita.ru/cart/\" -H \"Cookie: PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727209904.3.1.1727210099.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w\" -H \"Sec-Fetch-Dest: empty\" -H \"Sec-Fetch-Mode: cors\" -H \"Sec-Fetch-Site: same-origin\" -H \"Priority: u=0\" --data-raw \"itemID=592955&quantity=2&action=update_quantity&LANG_key=ru&S_wh=1&S_CID=4931f34cef0c6348f91d73edeb908fac&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID=\""
+			},
+			"response": []
+		},
+		{
+			"name": "Просмотр_корзины",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0"
+					},
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br, zstd"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/search/?query=^%^D0^%^B1^%^D0^%^B0^%^D0^%^BB^%^D1^%^8C^%^D0^%^B7^%^D0^%^B0^%^D0^%^BC"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727203878.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Priority",
+						"value": "u=0, i"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}cart/",
+					"host": [
+						"{{BaseUrl}}cart"
+					],
+					"path": [
+						""
+					]
+				},
+				"description": "Generated from cURL: curl \"https://altaivita.ru/cart/\" --compressed -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\" -H \"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8\" -H \"Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3\" -H \"Accept-Encoding: gzip, deflate, br, zstd\" -H \"Connection: keep-alive\" -H \"Referer: https://altaivita.ru/search/?query=^%^D0^%^B1^%^D0^%^B0^%^D0^%^BB^%^D1^%^8C^%^D0^%^B7^%^D0^%^B0^%^D0^%^BC\" -H \"Cookie: PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727203878.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2\" -H \"Upgrade-Insecure-Requests: 1\" -H \"Sec-Fetch-Dest: document\" -H \"Sec-Fetch-Mode: navigate\" -H \"Sec-Fetch-Site: same-origin\" -H \"Sec-Fetch-User: ?1\" -H \"Priority: u=0, i\""
+			},
+			"response": []
+		},
+		{
+			"name": "Поиск_крем",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0"
+					},
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br, zstd"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/search/?query=^%^D0^%^B1^%^D0^%^B0^%^D0^%^BB^%^D1^%^8C^%^D0^%^B7^%^D0^%^B0^%^D0^%^BC"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727204416.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Priority",
+						"value": "u=0, i"
+					}
+				],
+				"url": {
+					"raw": "{{BaseUrl}}search/?query=крем",
+					"host": [
+						"{{BaseUrl}}search"
+					],
+					"path": [
+						""
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "крем"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl \"https://altaivita.ru/search/?query=^%^D0^%^BA^%^D1^%^80^%^D0^%^B5^%^D0^%^BC\" --compressed -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\" -H \"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8\" -H \"Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3\" -H \"Accept-Encoding: gzip, deflate, br, zstd\" -H \"Connection: keep-alive\" -H \"Referer: https://altaivita.ru/search/?query=^%^D0^%^B1^%^D0^%^B0^%^D0^%^BB^%^D1^%^8C^%^D0^%^B7^%^D0^%^B0^%^D0^%^BC\" -H \"Cookie: PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727204416.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w\" -H \"Upgrade-Insecure-Requests: 1\" -H \"Sec-Fetch-Dest: document\" -H \"Sec-Fetch-Mode: navigate\" -H \"Sec-Fetch-Site: same-origin\" -H \"Sec-Fetch-User: ?1\" -H \"Priority: u=0, i\""
+			},
+			"response": []
+		},
+		{
+			"name": "add_id=2858_to_cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br, zstd"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Origin",
+						"value": "https://altaivita.ru"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/search/?query=^%^D0^%^BA^%^D1^%^80^%^D0^%^B5^%^D0^%^BC"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727204441.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Priority",
+						"value": "u=0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "product_id=2858&this_listId=search_list&LANG_key=ru&S_wh=1&S_CID=4931f34cef0c6348f91d73edeb908fac&S_cur_code=rub&S_koef=1&quantity=1&S_hint_code=&S_customerID=",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}engine/cart/add_products_to_cart_from_preview.php",
+					"host": [
+						"{{BaseUrl}}engine"
+					],
+					"path": [
+						"cart",
+						"add_products_to_cart_from_preview.php"
+					]
+				},
+				"description": "Generated from cURL: curl \"https://altaivita.ru/engine/cart/add_products_to_cart_from_preview.php\" --compressed -X POST -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\" -H \"Accept: */*\" -H \"Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3\" -H \"Accept-Encoding: gzip, deflate, br, zstd\" -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" -H \"X-Requested-With: XMLHttpRequest\" -H \"Origin: https://altaivita.ru\" -H \"Connection: keep-alive\" -H \"Referer: https://altaivita.ru/search/?query=^%^D0^%^BA^%^D1^%^80^%^D0^%^B5^%^D0^%^BC\" -H \"Cookie: PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727204441.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w\" -H \"Sec-Fetch-Dest: empty\" -H \"Sec-Fetch-Mode: cors\" -H \"Sec-Fetch-Site: same-origin\" -H \"Priority: u=0\" --data-raw \"product_id=2858&this_listId=search_list&LANG_key=ru&S_wh=1&S_CID=4931f34cef0c6348f91d73edeb908fac&S_cur_code=rub&S_koef=1&quantity=1&S_hint_code=&S_customerID=\""
+			},
+			"response": []
+		},
+		{
+			"name": "Просмотр_корзины",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0"
+					},
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br, zstd"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/search/?query=^%^D0^%^B1^%^D0^%^B0^%^D0^%^BB^%^D1^%^8C^%^D0^%^B7^%^D0^%^B0^%^D0^%^BC"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727203878.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Priority",
+						"value": "u=0, i"
+					}
+				],
+				"url": {
+					"raw": "{{BaseUrl}}cart/",
+					"host": [
+						"{{BaseUrl}}cart"
+					],
+					"path": [
+						""
+					]
+				},
+				"description": "Generated from cURL: curl \"https://altaivita.ru/cart/\" --compressed -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\" -H \"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8\" -H \"Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3\" -H \"Accept-Encoding: gzip, deflate, br, zstd\" -H \"Connection: keep-alive\" -H \"Referer: https://altaivita.ru/search/?query=^%^D0^%^B1^%^D0^%^B0^%^D0^%^BB^%^D1^%^8C^%^D0^%^B7^%^D0^%^B0^%^D0^%^BC\" -H \"Cookie: PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727203878.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2\" -H \"Upgrade-Insecure-Requests: 1\" -H \"Sec-Fetch-Dest: document\" -H \"Sec-Fetch-Mode: navigate\" -H \"Sec-Fetch-Site: same-origin\" -H \"Sec-Fetch-User: ?1\" -H \"Priority: u=0, i\""
+			},
+			"response": []
+		},
+		{
+			"name": "delete_id=3535_from_cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br, zstd"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Origin",
+						"value": "https://altaivita.ru"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/cart/"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727203879.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Priority",
+						"value": "u=0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "product_id=3535&LANG_key=ru&S_wh=1&S_CID=4931f34cef0c6348f91d73edeb908fac&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID=",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}engine/cart/delete_products_from_cart_preview.php",
+					"host": [
+						"{{BaseUrl}}engine"
+					],
+					"path": [
+						"cart",
+						"delete_products_from_cart_preview.php"
+					]
+				},
+				"description": "Generated from cURL: curl \"https://altaivita.ru/engine/cart/delete_products_from_cart_preview.php\" --compressed -X POST -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\" -H \"Accept: */*\" -H \"Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3\" -H \"Accept-Encoding: gzip, deflate, br, zstd\" -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" -H \"X-Requested-With: XMLHttpRequest\" -H \"Origin: https://altaivita.ru\" -H \"Connection: keep-alive\" -H \"Referer: https://altaivita.ru/cart/\" -H \"Cookie: PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727203879.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w\" -H \"Sec-Fetch-Dest: empty\" -H \"Sec-Fetch-Mode: cors\" -H \"Sec-Fetch-Site: same-origin\" -H \"Priority: u=0\" --data-raw \"product_id=6398&LANG_key=ru&S_wh=1&S_CID=4931f34cef0c6348f91d73edeb908fac&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID=\""
+			},
+			"response": []
+		},
+		{
+			"name": "delete_id=2858_from_cart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0"
+					},
+					{
+						"key": "Accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br, zstd"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=UTF-8"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": "XMLHttpRequest"
+					},
+					{
+						"key": "Origin",
+						"value": "https://altaivita.ru"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/cart/"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727205128.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Priority",
+						"value": "u=0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "product_id=2858&LANG_key=ru&S_wh=1&S_CID=4931f34cef0c6348f91d73edeb908fac&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID=",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}engine/cart/delete_products_from_cart_preview.php",
+					"host": [
+						"{{BaseUrl}}engine"
+					],
+					"path": [
+						"cart",
+						"delete_products_from_cart_preview.php"
+					]
+				},
+				"description": "Generated from cURL: curl \"https://altaivita.ru/engine/cart/delete_products_from_cart_preview.php\" --compressed -X POST -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\" -H \"Accept: */*\" -H \"Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3\" -H \"Accept-Encoding: gzip, deflate, br, zstd\" -H \"Content-Type: application/x-www-form-urlencoded; charset=UTF-8\" -H \"X-Requested-With: XMLHttpRequest\" -H \"Origin: https://altaivita.ru\" -H \"Connection: keep-alive\" -H \"Referer: https://altaivita.ru/cart/\" -H \"Cookie: PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727205128.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w\" -H \"Sec-Fetch-Dest: empty\" -H \"Sec-Fetch-Mode: cors\" -H \"Sec-Fetch-Site: same-origin\" -H \"Priority: u=0\" --data-raw \"product_id=2858&LANG_key=ru&S_wh=1&S_CID=4931f34cef0c6348f91d73edeb908fac&S_cur_code=rub&S_koef=1&S_hint_code=&S_customerID=\""
+			},
+			"response": []
+		},
+		{
+			"name": "Просмотр_корзины",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0"
+					},
+					{
+						"key": "Accept",
+						"value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br, zstd"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Referer",
+						"value": "https://altaivita.ru/search/?query=^%^D0^%^BA^%^D1^%^80^%^D0^%^B5^%^D0^%^BC"
+					},
+					{
+						"key": "Cookie",
+						"value": "PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727204806.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w"
+					},
+					{
+						"key": "Upgrade-Insecure-Requests",
+						"value": "1"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "document"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "navigate"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "Sec-Fetch-User",
+						"value": "?1"
+					},
+					{
+						"key": "Priority",
+						"value": "u=0, i"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{BaseUrl}}cart/",
+					"host": [
+						"{{BaseUrl}}cart"
+					],
+					"path": [
+						""
+					]
+				},
+				"description": "Generated from cURL: curl \"https://altaivita.ru/cart/\" --compressed -H \"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0\" -H \"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8\" -H \"Accept-Language: ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3\" -H \"Accept-Encoding: gzip, deflate, br, zstd\" -H \"Connection: keep-alive\" -H \"Referer: https://altaivita.ru/search/?query=^%^D0^%^BA^%^D1^%^80^%^D0^%^B5^%^D0^%^BC\" -H \"Cookie: PHPSESSID=hvdvu7273ub9v2sva06rkd76u5; CID=4931f34cef0c6348f91d73edeb908fac; site_countryID=247; site_country_name=^%^D0^%^A0^%^D0^%^BE^%^D1^%^81^%^D1^%^81^%^D0^%^B8^%^D0^%^B9^%^D1^%^81^%^D0^%^BA^%^D0^%^B0^%^D1^%^8F+^%^D0^%^A4^%^D0^%^B5^%^D0^%^B4^%^D0^%^B5^%^D1^%^80^%^D0^%^B0^%^D1^%^86^%^D0^%^B8^%^D1^%^8F; _ym_uid=1727123174808536745; _ym_d=1727123174; _ga_2JB65Y3D22=GS1.1.1727201371.2.1.1727204806.0.0.0; _ga=GA1.1.926848059.1727123174; _ym_isad=2; _ym_visorc=w\" -H \"Upgrade-Insecure-Requests: 1\" -H \"Sec-Fetch-Dest: document\" -H \"Sec-Fetch-Mode: navigate\" -H \"Sec-Fetch-Site: same-origin\" -H \"Sec-Fetch-User: ?1\" -H \"Priority: u=0, i\""
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BaseUrl",
+			"value": "https://altaivita.ru/",
+			"type": "string"
+		}
+	]
+}
