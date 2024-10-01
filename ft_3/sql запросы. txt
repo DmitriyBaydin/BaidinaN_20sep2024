@@ -1,0 +1,37 @@
+select product_name from products;
+
+select p.product_id,
+	   p.product_name,
+	   p.price
+from products AS p
+inner join nutritional_information as n
+on p.product_id = n.product_id
+where fiber > 5;
+
+select max(p.product_name)
+from products AS p
+inner join nutritional_information as n
+on p.product_id = n.product_id
+group by n.protein
+limit 1;
+
+select c.category_id,
+	   sum(p.calories)
+from products AS p
+join categories as c
+on p.category_id = c.category_id
+join nutritional_information as n
+on p.product_id = n.product_id
+where n.fat > 0
+group by c.category_id
+order by c.category_id asc;
+
+select c.category_name,
+	   avg(p.price)
+from products AS p
+join categories as c
+on p.category_id = c.category_id
+join nutritional_information as n
+on p.product_id = n.product_id
+group by c.category_name
+order by avg(p.price) desc;
